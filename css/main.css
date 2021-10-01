@@ -4,11 +4,14 @@ padding: 0;
 box-sizing: border-box;
 font-family: 'Lato', sans-serif;
 color: white;
+font-size: 14px;
 }
 
 body{
     height: 100vh;
     background-color: black;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -30,5 +33,55 @@ body{
 header{
     text-align: right;
     padding: 10px;
+}
 
+/* Main Section */
+main{
+    background: grey;
+    flex-grow: 1;
+}
+
+main ul.users{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+ul.users li{
+    position: relative;
+    height: 200px;
+    width: 300px;
+    margin: 5px;
+
+}
+
+ul.users li div{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    padding: 3px;
+}
+
+ul.users li img{
+    object-fit:cover;
+    max-width: 100%;
+}
+
+ul.users .micro{
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+/* Footer Section */
+footer{
+background: blue;
 }
