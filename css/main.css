@@ -39,6 +39,7 @@ header{
 main{
     background: grey;
     flex-grow: 1;
+
 }
 
 main ul.users{
@@ -73,15 +74,30 @@ ul.users .micro{
     font-size: 18px;
 }
 
-
-
-
-
-
-
-
-
 /* Footer Section */
 footer{
 background: blue;
+display: flex;
+justify-content: space-between;
+}
+
+footer .action{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3px;
+    margin: 5px;
+}
+
+.arrow{
+    margin-left: 3px;
+}
+
+.footer-left{
+    display: flex;
+    align-items: center;
+}
+
+.footer-icon{
+    font-size: 24px;
 }
