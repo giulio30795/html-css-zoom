@@ -3,4 +3,32 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 font-family: 'Lato', sans-serif;
+color: white;
+}
+
+body{
+    height: 100vh;
+    background-color: black;
+
+}
+
+/* Commons */
+
+.button{
+    background-color: #2B3A3F;
+    padding: 5px;
+    border: 0;
+    margin: 3px;
+}
+
+.bd-radius{
+    border-radius: 5px;
+}
+
+/* Header */
+
+header{
+    text-align: right;
+    padding: 10px;
+
 }
