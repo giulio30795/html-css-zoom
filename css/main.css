@@ -21,13 +21,17 @@ body{
     background-color: #2B3A3F;
     padding: 5px;
     border: 0;
-    margin: 3px;
+    margin: 0 5px;
+    cursor: pointer;
 }
 
 .bd-radius{
     border-radius: 5px;
 }
 
+.action{
+    cursor: pointer;
+}
 /* Header */
 
 header{
@@ -37,8 +41,9 @@ header{
 
 /* Main Section */
 main{
-    background: grey;
+    background: black;
     flex-grow: 1;
+    overflow: auto;
 
 }
 
@@ -76,7 +81,8 @@ ul.users .micro{
 
 /* Footer Section */
 footer{
-background: blue;
+background: #0E0E0E;
+color: #E0E0E0;
 display: flex;
 justify-content: space-between;
 }
@@ -93,11 +99,25 @@ footer .action{
     margin-left: 3px;
 }
 
-.footer-left{
+.footer-left,
+.footer-center{
     display: flex;
     align-items: center;
 }
 
 .footer-icon{
     font-size: 24px;
+}
+
+.footer-right.button{
+    color: #FF5555;
+    margin: 0;
+    padding: 10px;
+}
+.green{
+    color: #0E0E;
+}
+
+li.action{
+padding: 0 10px;
 }
