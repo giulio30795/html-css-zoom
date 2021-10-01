@@ -7,62 +7,68 @@ color: white;
 font-size: 14px;
 }
 
-body{
+body {
     height: 100vh;
     background-color: black;
     display: flex;
     flex-direction: column;
-
 }
 
 /* Commons */
 
-.button{
+.button {
     background-color: #2B3A3F;
     padding: 5px;
     border: 0;
-    margin: 0 5px;
+    margin: 0 2px;
     cursor: pointer;
 }
 
-.bd-radius{
+.bd-radius {
     border-radius: 5px;
 }
 
-.action{
+.action {
     cursor: pointer;
 }
 /* Header */
 
-header{
+header {
     text-align: right;
     padding: 10px;
 }
 
 /* Main Section */
+
 main{
     background: black;
     flex-grow: 1;
     overflow: auto;
-
 }
 
-main ul.users{
+ul.users li div {
+    display: none;
+}
+
+main:hover ul.users li div {
+    display: block;
+}
+
+main ul.users {
     display: flex;
     justify-content: center;
     list-style: none;
     flex-wrap: wrap;
 }
 
-ul.users li{
+ul.users li {
     position: relative;
     height: 200px;
     width: 300px;
     margin: 5px;
-
 }
 
-ul.users li div{
+ul.users li div {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -70,24 +76,25 @@ ul.users li div{
     padding: 3px;
 }
 
-ul.users li img{
+ul.users li img {
     object-fit:cover;
     max-width: 100%;
 }
 
-ul.users .micro{
+ul.users .micro {
     font-size: 18px;
 }
 
 /* Footer Section */
-footer{
+
+footer {
 background: #0E0E0E;
 color: #E0E0E0;
 display: flex;
 justify-content: space-between;
 }
 
-footer .action{
+footer .action {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -95,29 +102,49 @@ footer .action{
     margin: 5px;
 }
 
-.arrow{
+footer li {
+    list-style: none;
+}
+
+.arrow {
     margin-left: 3px;
 }
 
+.action.partecipant {
+    position: relative;
+}
+
+#partecipant {
+    position: absolute;
+    top: 0;
+    right: 25%;
+    font-size: 12px;
+}
+
 .footer-left,
-.footer-center{
+.footer-center {
     display: flex;
     align-items: center;
 }
 
-.footer-icon{
+.footer-icon {
     font-size: 24px;
 }
 
-.footer-right.button{
+.footer-right.button {
     color: #FF5555;
     margin: 0;
     padding: 10px;
 }
-.green{
+
+.green {
     color: #0E0E;
 }
 
-li.action{
+li.action {
 padding: 0 10px;
+}
+
+li i.action{
+    margin-left: -12px;
 }
